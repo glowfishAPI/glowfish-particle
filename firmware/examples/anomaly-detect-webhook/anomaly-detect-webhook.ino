@@ -1,5 +1,5 @@
-// make sure to include with Particle IDE the SparkJson, onewire, and dallas-temperature libraries 
-// as described in main README.md
+//make sure to include with Particle IDE the SparkJson, onewire, and dallas-temperature libraries 
+//as described in main README.md
 
 DallasTemperature dallas(new OneWire(D2));
 
@@ -16,7 +16,7 @@ void setup()
   pinMode(anomalyLed, OUTPUT);
   pinMode(photoPower, OUTPUT);
   digitalWrite(photoPower, HIGH);
-  Spark.subscribe("hook-response/glowfish_example", myHandler, MY_DEVICES);
+  Spark.subscribe("hook-response/glowfish_anomaly_detect", myHandler, MY_DEVICES);
 }
 
 void loop()
@@ -28,7 +28,7 @@ void loop()
   String s_wifi = String(wifi);
   int photo = analogRead(photoResistor);
   String s_photo = String(photo);
-  Spark.publish("glowfish_example","{\"temp\":"+ s_fahr + ",\"photo\":"+s_photo+",\"wifi\":" + s_wifi + "}" ,60, PUBLIC);
+  Spark.publish("glowfish_anomaly_detect","{\"temp\":"+ s_fahr + ",\"photo\":"+s_photo+",\"wifi\":" + s_wifi + "}" ,60, PUBLIC);
   delay(5000);
 }
 
