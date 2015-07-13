@@ -1,6 +1,6 @@
 # glowfi.sh for Particle.io Devices
 
-This library facilitates integration between glowfish and particle.io devices.  Currently, the library consists of only a simple (yet powerful!) anomaly detection webhook example, but the folder structure adheres to [the valid library spec defined by Particle.io](https://github.com/spark/uber-library-example) so that as we add more functionality, we don't need to move folders, break links, and make people sad.
+This library facilitates integration between glowfish and particle.io devices.  Currently, the library consists of only a simple (yet powerful!) anomaly detection webhook example, but the folder structure adheres to [the valid library spec defined by Particle.io](https://github.com/spark/uber-library-example). So, as we add more functionality we don't need to move folders, break links, and make people sad.
 
 ## Real-time Multivariate Anomaly Detection by Webhook
 
