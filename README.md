@@ -12,6 +12,8 @@ anomaly-detect-webhook.json contains the json to be used when [registering your 
 
 Please note this has only been tested using the Photon and the sensors included in the Particle Maker kit.
 
+The next step for this example is to subscribe a data visualizer such as librato or ubidots to the hook-response with the anomaly detection data.
+
 
 
 
