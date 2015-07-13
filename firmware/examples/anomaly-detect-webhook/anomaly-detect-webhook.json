@@ -1,0 +1,13 @@
+{
+    "event": "glowfish_anomaly_detect",
+    "url": "https://username1:password1@api.glowfi.sh/v1/anomaly_detect/",
+    "requestType": "POST",
+    "mydevices": true,
+    "json": {"data_set": {
+                "temp": ["{{temp}}"],
+                "photo": ["{{photo}}"],
+                "wifi": ["{{wifi}}"]
+              },
+              "time": ["{{SPARK_PUBLISHED_AT}}"]
+            }
+}
