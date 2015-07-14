@@ -1,7 +1,7 @@
 //make sure to include with Particle IDE the SparkJson, onewire, and dallas-temperature libraries 
 //as described in main README.md
 
-DallasTemperature dallas(new OneWire(D2));
+DallasTemperature dallas(new OneWire(D3));
 
 int photoResistor = A0;
 int photoPower = A5;
