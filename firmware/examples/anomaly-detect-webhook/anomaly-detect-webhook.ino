@@ -28,7 +28,7 @@ void loop()
   String s_wifi = String(wifi);
   int photo = analogRead(photoResistor);
   String s_photo = String(photo);
-  Spark.publish("glowfish_anomaly_detect","{\"temp\":"+ s_fahr + ",\"photo\":"+s_photo+",\"wifi\":" + s_wifi + "}" ,60, PUBLIC);
+  Spark.publish("glowfish_anomaly_detect","{\"temp\":"+ s_fahr + ",\"photo\":"+s_photo+",\"wifi\":" + s_wifi + "}" ,60, PRIVATE);
   delay(5000);
 }
 
