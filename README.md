@@ -14,7 +14,7 @@ Please note this has only been tested using the Photon and the sensors included 
 
 Also note that until a total minimum of 100 events are recieved by the glowfi.sh API, no anomaly detections will be produced. Once the minimum has been reached, anomaly detections will begin. So in this example, it will send data for about 500 seconds before anomaly detections are live. See [the anomaly_detect API doc](http://glowfish.readme.io/docs/anomaly_detect) for more details.
 
-To visualize the glowfi.sh output, we support ThingSpeak. Simply provide your ThingSpeak API token and Channel ID in your glowfi.sh [admin dashboard](https://api.glowfi.sh/admin/app/) under the Visualization tab.
+To visualize the glowfi.sh output, we support ThingSpeak. Simply provide your ThingSpeak API token and Channel ID in your glowfi.sh [admin dashboard](https://api.glowfi.sh/admin/app/) under the Data Visualization tab.
 
 
 
