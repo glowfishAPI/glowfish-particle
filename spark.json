@@ -1,0 +1,7 @@
+{
+  "name": "glowfish-particle",
+  "author": "Vamsi Vytla",
+  "license": "MIT",
+  "version": "0.0.11",
+  "description": "A simple library that helps photon users to post to http://glowfi.sh machine learning service"
+}
