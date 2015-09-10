@@ -1,9 +1,29 @@
-#include "glowfish-particle/glowfish-particle.h"
-#include "SparkJson/SparkJson.h"
-#include "HttpClient/HttpClient.h"
+// Below is a sample program that enables Particle.io's photon board to talk to
+// Glowfish's machine learning serivce at http://api.glowfi.sh
+//
+// The example here uses 3 libraries. SparkJson, HttpClient, and
+// glowfish-particle. SparkJson is used to build and parse json strings that
+// get exchanged with Glowfish over the HttpClient library. glowfish-particle
+// provides functions to setup and make glowfi.sh API calls over HttpClient.
+//
+// Following steps should help your data safely make it over to Glowfish.
+// 0. Initialize GlowfishParticle class
+// 1. Identify the channels you intend to post to Glowfish.
+// 2. Build a JSON from this data, using the SparkJson library. SparkJson
+//    has excellent documentation available on GitHub. The json should be
+//    built in the format documented here (This describes the anomaly_detect
+//    endpoint): https://glowfish.readme.io/docs/anomaly_detect
+// 3. Fill in api.glowfi.sh access authorization details into the
+//    #define GF_AUTHORIZATION
+// 4. Make a post! Call GlowfishParticle::glowfishPOST method, with the
+//    endpoint, jsonbuffer that you built in step 2, and the http_headers
+//    with the base64 Authorization credentials.
 
-#define GF_AUTHORIZATION "Basic <Base 64 encoding of your glowfi.sh username and password>"
-// If you don't know how to do that, go here: http://www.tuxgraphics.org/toolbox/base64-javascript.html
+#define GF_AUTHORIZATION "Basic <<<Replace with base64 encoding of your glowfi.sh username and password>>>"
+// If you don't know how to generate the base64 encoding go here:
+//    http://www.tuxgraphics.org/toolbox/base64-javascript.html
+// CAUTION: Do NOT remove/replace the word Basic from the string above,
+//          it's part of http standard.
 
 #define N_POINTS 100
 
