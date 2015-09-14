@@ -14,7 +14,7 @@ Please note that *test.cpp* relies on three libraries: SparkJson, HttpClient, an
 
 ## Webhook Example
 
-In the folder *firmware/examples/anomaly-detect-webhook* we provide example webhook json and an application to accomplish a simple glowfish integration via the Particle Cloud.  Note that the two files contained in this folder are self contained, and do not rely on the rest of the library to be imported. For more info, please see [the README file located in that folder](https://github.com/glowfishAPI/glowfish-particle/tree/master/firmware/examples/anomaly-detect-webhook). 
+In the folder *firmware/examples/anomaly-detect-webhook* we provide example webhook json and an application to accomplish a simple glowfish integration via the Particle Cloud.  Note that the two files contained in this folder are self contained, and do not rely on the rest of the glowfish-particle library to be imported. For more info, please see [the README file located in that folder](https://github.com/glowfishAPI/glowfish-particle/tree/master/firmware/examples/anomaly-detect-webhook). 
 
  
 
