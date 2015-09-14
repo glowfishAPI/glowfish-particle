@@ -10,9 +10,12 @@
 // 0. Initialize GlowfishParticle class
 // 1. Identify the channels you intend to post to Glowfish.
 // 2. Build a JSON from this data, using the SparkJson library. SparkJson
-//    has excellent documentation available on GitHub. The json should be
-//    built in the format documented here (This describes the anomaly_detect
-//    endpoint): https://glowfish.readme.io/docs/anomaly_detect
+//    has excellent documentation available on GitHub. The json for this example
+//    should be formatted as specified in the api doc for anomaly_detect:
+//        https://glowfish.readme.io/docs/anomaly_detect
+//    If you are implementing any of the other supported endpoints (currently
+//    signal_extract, train, and predict), please see the respective api doc
+//    at glowfish.readme.io for the input format.
 // 3. Fill in api.glowfi.sh access authorization details into the
 //    #define GF_AUTHORIZATION
 // 4. Make a post! Call GlowfishParticle::glowfishPOST method, with the
