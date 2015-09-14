@@ -1,6 +1,7 @@
 // Below is a sample program that enables Particle.io's photon board to talk to
 // Glowfish's machine learning serivce at http://api.glowfi.sh. This example uses
-// the anomaly_detect endpoint.  
+// the anomaly_detect endpoint. The other endpoints currently supported are 
+// signal_extract, train, and predict.
 //
 // The example here uses 3 libraries. SparkJson, HttpClient, and
 // glowfish-particle. SparkJson is used to build and parse json strings that
