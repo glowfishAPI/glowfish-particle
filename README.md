@@ -8,9 +8,9 @@ Please note this code has only been tested using the Photon.
 
 The library provides the ability to connect directly to the glowfi.sh API via HTTP calls instead of using Particle Cloud's pub/sub messaging system.  While Particle Cloud provides a powerful ecosystem for interaction among various agents, when constraints such as it's rate limits, payload size limits, etc. need to be avoided, this library can prove a conventient way of POSTing the data directly.
 
-The example application in *firmware/examples/test-glowfish-post/test.cpp* shows how to use the library. Please see the comments at the top of *test.cpp* for more implementation details. 
+The sample application in *firmware/examples/test-glowfish-post/anomaly-detect-post.cpp* shows how to use the library, using our *anomaly_detect* endpoint as as the example. Please see the comments at the top of *anomaly-detect-post.cpp* for more implementation details.Currently, the other supported endpoints in this library are *signal_extract*, *train*, and *predict*.  
 
-Please note that *test.cpp* relies on three libraries: SparkJson, HttpClient, and glowfish-particle.  If using the web IDE - you can import SparkJson and HttpClient via the Community Library listing's "Include in App" button.  glowfish-particle is not listed yet in Community Libraries, so you will need to use the "Contribute Library" and this repo's github url: *glowfishAPI/glowfish-particle*. For more info on how to do this, please see the [Contribute Library](https://docs.particle.io/guide/getting-started/build/photon/#contribute-a-library) section of Particle's user guide.
+Please note that *anomaly-detect-post.cpp* relies on three libraries: SparkJson, HttpClient, and glowfish-particle.  If using the web IDE - you can import SparkJson and HttpClient via the Community Library listing's "Include in App" button.  glowfish-particle is not listed yet in Community Libraries, so you will need to use the "Contribute Library" and this repo's github url: *glowfishAPI/glowfish-particle*. For more info on how to do this, please see the [Contribute Library](https://docs.particle.io/guide/getting-started/build/photon/#contribute-a-library) section of Particle's user guide.
 
 ## Webhook Example
 
