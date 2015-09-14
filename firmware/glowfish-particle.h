@@ -1,5 +1,7 @@
 #define GF_ANOMALY_DETECT 1
 #define GF_SIGNAL_EXTRACT 2
+#define GF_TRAIN 3
+#define GF_PREDICT 4
 
 #include "SparkJson/SparkJson.h"
 #include "HttpClient/HttpClient.h"

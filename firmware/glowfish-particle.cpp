@@ -16,6 +16,10 @@ int GlowfishParticle::glowfishPOST(int glowfishEndpointType, const char * jsonBu
     request.path = "/v1/anomaly_detect/";
   else if (glowfishEndpointType == GF_SIGNAL_EXTRACT)
     request.path = "/v1/signal_extract/";
+  else if (glowfishEndpointType == GF_TRAIN)
+      request.path = "/v1/train/";
+  else if (glowfishEndpointType == GF_PREDICT)
+      request.path = "/v1/predict/";
   else
     return GLOWFISH_ERROR;
   request.body = jsonBuf;
