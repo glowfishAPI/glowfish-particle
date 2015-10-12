@@ -1,6 +1,6 @@
 {
     "event": "glowfish_anomaly_detect",
-    "url": "https://username1:password1@api.glowfi.sh/v1/anomaly_detect/",
+    "url": "https://<GLOWFISH AUTH KEY>:<GLOWFISH AUTH SECRET KEY>@api.glowfi.sh/v1/anomaly_detect/",
     "requestType": "POST",
     "mydevices": true,
     "json": {"data_set": {
